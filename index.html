@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script> 
+    <script src="scripts.js"></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -37,31 +37,31 @@
                         <p>Let's do this!</p>
                         <fieldset id="names">
                             <div id="first-name" class="form-elems">
-                                <label for="first_name">First Name</label>
+                                <label for="first_name">First Name<span aria-label="required">*</span></label>
                                 <input type="text" id="first_name" name="first_name" required minlength="2" placeholder="John"/>
                             </div>
                             <div id="surname" class="form-elems">
-                                <label for="surname">Surname</label>
+                                <label for="surname">Surname<span aria-label="required">*</span></label>
                                 <input type="text" id="surname" name="surname" required minlength="2" placeholder="Smith"/>
                             </div>  
                         </fieldset>
                         <fieldset id="contact">
                             <div id="email" class="form-elems">
-                                <label for="email">Email</label>
+                                <label for="email">Email<span aria-label="required">*</span></label>
                                 <input type="email" id="email" name="email" required placeholder="john.smith@email.com"/>
                             </div>
                             <div id="phone" class="form-elems">
-                                <label for="phone">Phone Number</label>
+                                <label for="phone">Phone Number<span aria-label="required">*</span></label>
                                 <input type="number" id="phone" name="phone" required minlength="11" placeholder="07123456789"/>
                             </div>  
                         </fieldset>
                         <fieldset id="pwd">
                             <div id="password" class="form-elems">
-                                <label for="password">Password</label>
+                                <label for="password">Password<span aria-label="required">*</span><span class="error" aria-live="polite"></span></label>
                                 <input type="password" id="password" name="password" required/>
                             </div>
                             <div id="conf-pwd" class="form-elems">
-                                <label for="conf-password">Confirm Password</label>
+                                <label for="conf-password">Confirm Password<span aria-label="required">*</span></label>
                                 <input type="password" id="conf-password" name="conf-password" required/>
                             </div>  
                         </fieldset>
@@ -77,4 +77,5 @@
         </div>
     </div>
 </body>
+
 </html>

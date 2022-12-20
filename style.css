@@ -121,6 +121,7 @@ fieldset{
     flex-direction: column;
     margin-right: 16px;
 }
+
 form button{
     margin: 16px 0px 0px 14px;
     padding: 8px;
@@ -128,3 +129,16 @@ form button{
     background-color:rgb(254, 208, 8);
     color: rgb(9, 31, 62);
 }
+
+input{
+    border-radius: 5%;
+    border: 1px solid rgba(211, 211, 211, 0.716);
+}
+
+
+  
+input:focus {
+    box-shadow: 1px 2px 1px 1px rgb(19, 31, 62);
+  }
+
+
