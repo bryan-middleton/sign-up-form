@@ -11,16 +11,64 @@
 <body>
     <div id="main-container" class="main-container">
         <div id="left-area" class="left-area">
-            <div id="logo" class="logo">Logo</div>
-                <p>Photo by <a href="https://unsplash.com/@jesusance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas Serer</a>
-                on <a href="https://unsplash.com/s/photos/football?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-            </div>    
+            <div id="left-main">   
+                <div class="logo-container">
+                    <img src="images/sfalogo.png">
+                    <h1>Supporter Club</h1>
+                </div>
+            </div>
+            <div id="credit">
+                Photo by <a href="https://unsplash.com/@jesusance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas Serer</a>
+                on <a href="https://unsplash.com/s/photos/football?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>    
         <div id="right-area" class="right-area">
             <div id="hero" class="hero">
                 Hero text
             </div>
             <div id="form-input" class="form-input">
                 form area
+                <form>
+                    <section>
+                        <p>Let's do this!</p>
+                        <fieldset id="names">
+                            <div id="first-name" class="form-elems">
+                                <label for="first_name">First Name</label>
+                                <input type="text" id="first_name" name="first_name" required minlength="2" placeholder="John"/>
+                            </div>
+                            <div id="surname" class="form-elems">
+                                <label for="surname">Surname</label>
+                                <input type="text" id="surname" name="surname" required minlength="2" placeholder="Smith"/>
+                            </div>  
+                        </fieldset>
+                        <fieldset id="contact">
+                            <div id="email" class="form-elems">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="john.smith@email.com"/>
+                            </div>
+                            <div id="phone" class="form-elems">
+                                <label for="phone">Phone Number</label>
+                                <input type="number" id="phone" name="phone" required minlength="11" placeholder="07123456789"/>
+                            </div>  
+                        </fieldset>
+                        <fieldset id="pwd">
+                            <div id="password" class="form-elems">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required/>
+                            </div>
+                            <div id="conf-pwd" class="form-elems">
+                                <label for="conf-password">Confirm Password</label>
+                                <input type="password" id="conf-password" name="conf-password" required/>
+                            </div>  
+                        </fieldset>
+                    </section>
+                    <section>
+                        <div id="action" class="action">
+                            <button id="create" class="create">Create Account</button>
+                            <p>Already have an account? <a>Log In</a></p>
+                        </div>
+                    </section>
+                </form>
             </div>
         </div>
     </div>
