@@ -13,6 +13,7 @@
 
 .left-area{
     display: flex;
+    flex: 1 1 100px;
     flex-direction: column;
     width: 33%;
     background: no-repeat url("images/thomas-serer.jpg");
@@ -37,6 +38,7 @@
     width:30%;
     height: auto;
     border-color: blue;
+    flex-shrink: 0;
 }
 
 .logo-container h1{
