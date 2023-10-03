@@ -1,81 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="scripts.js"></script>
     <title>Sign-Up Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="main-container" class="main-container">
-        <div id="left-area" class="left-area">
-            <div id="left-main">   
-                <div class="logo-container">
-                    <img src="images/sfalogo.png">
-                    <h1>Supporter Club</h1>
-                </div>
-            </div>
-            <div id="credit">
-                Photo by <a href="https://unsplash.com/@jesusance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas Serer</a>
-                on <a href="https://unsplash.com/s/photos/football?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </div>
-        </div>    
-        <div id="right-area" class="right-area">
-            <div id="hero" class="hero">
-                <p id="hero-text">Let's imagine that this was a supporters' club that you can sign up
-                    for and receive updates on tickets, news etc. Sign up <em>now</em> to get started.
-                    <br>
-                    <br>
-                    You <em>know</em> you want to.
-                </p>
-            </div>
-            <div id="form-input" class="form-input">
-                <form>
-                    <section id="inputs">
-                        <p>Let's do this!</p>
-                        <fieldset id="names">
-                            <div id="first-name" class="form-elems">
-                                <label for="first_name">First Name<span aria-label="required">*</span></label>
-                                <input type="text" id="first_name" name="first_name" required minlength="2" placeholder="John"/>
-                            </div>
-                            <div id="surname" class="form-elems">
-                                <label for="surname">Surname<span aria-label="required">*</span></label>
-                                <input type="text" id="surname" name="surname" required minlength="2" placeholder="Smith"/>
-                            </div>  
-                        </fieldset>
-                        <fieldset id="contact">
-                            <div id="email" class="form-elems">
-                                <label for="email">Email<span aria-label="required">*</span></label>
-                                <input type="email" id="email" name="email" required placeholder="john.smith@email.com"/>
-                            </div>
-                            <div id="phone" class="form-elems">
-                                <label for="phone">Phone Number<span aria-label="required">*</span></label>
-                                <input type="number" id="phone" name="phone" required minlength="11" placeholder="07123456789"/>
-                            </div>  
-                        </fieldset>
-                        <fieldset id="pwd">
-                            <div id="password" class="form-elems">
-                                <label for="password">Password<span aria-label="required">*</span><span class="error" aria-live="polite"></span></label>
-                                <input type="password" id="password" name="password" required/>
-                            </div>
-                            <div id="conf-pwd" class="form-elems">
-                                <label for="conf-password">Confirm Password<span aria-label="required">*</span></label>
-                                <input type="password" id="conf-password" name="conf-password" required/>
-                            </div>  
-                        </fieldset>
-                    </section>
-                    <section>
-                        <div id="action" class="action">
-                            <button id="create" class="create">Create Account</button>
-                            <p>Already have an account? <a href="placeholder">Log In</a></p>
-                        </div>
-                    </section>
-                </form>
-            </div>
+      <div id="left-area" class="left-area">
+        <div id="left-main">
+          <div class="logo-container">
+            <img src="images/sfalogo.png" />
+            <h1>Supporter Club</h1>
+          </div>
         </div>
+        <div id="credit">
+          Photo by
+          <a
+            href="https://unsplash.com/@jesusance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Thomas Serer</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/football?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </div>
+      </div>
+      <div id="right-area" class="right-area">
+        <div id="hero" class="hero">
+          <p id="hero-text">
+            Let's imagine that this was a supporters' club that you can sign up
+            for and receive updates on tickets, news etc. Sign up
+            <em>now</em> to get started.
+            <br />
+            <br />
+            You <em>know</em> you want to.
+          </p>
+        </div>
+        <div id="form-input" class="form-input">
+          <form>
+            <section id="inputs">
+              <p>Let's do this!</p>
+              <fieldset id="names">
+                <div id="first-name" class="form-elems">
+                  <label for="first_name"
+                    >First Name<span aria-label="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    required
+                    minlength="2"
+                    placeholder="John"
+                  />
+                </div>
+                <div id="surname" class="form-elems">
+                  <label for="surname"
+                    >Surname<span aria-label="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="surname"
+                    name="surname"
+                    required
+                    minlength="2"
+                    placeholder="Smith"
+                  />
+                </div>
+              </fieldset>
+              <fieldset id="contact">
+                <div id="email" class="form-elems">
+                  <label for="email"
+                    >Email<span aria-label="required">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="john.smith@email.com"
+                  />
+                </div>
+                <div id="phone" class="form-elems">
+                  <label for="phone"
+                    >Phone Number<span aria-label="required">*</span></label
+                  >
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    required
+                    minlength="11"
+                    placeholder="07123456789"
+                  />
+                </div>
+              </fieldset>
+              <fieldset id="pwd">
+                <div id="password" class="form-elems">
+                  <label for="password"
+                    >Password<span aria-label="required">*</span
+                    ><span class="error" aria-live="polite"></span
+                  ></label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div id="conf-pwd" class="form-elems">
+                  <label for="conf-password"
+                    >Confirm Password<span aria-label="required">*</span></label
+                  >
+                  <input
+                    type="password"
+                    id="conf-password"
+                    name="conf-password"
+                    required
+                  />
+                </div>
+              </fieldset>
+            </section>
+            <section>
+              <div id="action" class="action">
+                <button id="create" class="create">Create Account</button>
+                <p>Already have an account? <a href="placeholder">Log In</a></p>
+              </div>
+            </section>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
